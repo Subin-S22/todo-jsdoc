@@ -6,10 +6,9 @@ import { useState } from "react";
 //should show a todo list of task
 //perform add, delete and update
 export default function Todo() {
-  /**@type {[(string | null), React.Dispatch<SetStateAction<(string|null)>>]}*/
   const [todoValue, setTodoValue] = useState("");
 
-  /**@param {React.FormEventHandler<HTMLFormElement>} e*/
+  /**@param {React.FormEvent<HTMLFormElement>} e*/
   const handleTodoAdd = async (e) => {
     try {
       e.preventDefault();
